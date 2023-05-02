@@ -1,11 +1,11 @@
 # w_wine_predict
 scikit-learn の　wine_dataset,flaskを用いて、wineの品種当てwebアプリを作成した
 
-app.py
-nn.py
-templates
- |-index.html
- |-result.html
+app.py  
+nn.py  
+templates  
+ |-index.html  
+ |-result.html  
 
 nn.pyにてニューラルネットワーク（MLPClassifier）を使って学習させ、データをnn.pklに保存
 
