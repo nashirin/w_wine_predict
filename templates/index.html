@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>Wine Predict App</title>
+<style>
+#wrapper {
+   text-align: center;
+}
+</style>
+   <body>
+      <div id="wrapper">
+         {% for message in form.alcohol.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.malic_acid.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.ash.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.alcalinity_of_ash.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.magnesium.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.total_phenols.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.flavanoids.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.nonflavanoid_phenols.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.proanthocyanins.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.color_intensity.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.hue.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.od280od315_of_diluted_wines.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         {% for message in form.proline.errors %}
+            <div>{{ message }}</div>
+         {% endfor %}
+
+         <form method="post">
+            {{ form.alcohol.label }}<br>
+            {{ form.alcohol }}
+            <br>
+            {{ form.malic_acid.label }}<br>
+            {{ form.malic_acid }}
+            <br>
+            {{ form.ash.label }}<br>
+            {{ form.ash }}
+            <br>
+            {{ form.alcalinity_of_ash.label }}<br>
+            {{ form.alcalinity_of_ash }}
+            <br>
+            {{ form.magnesium.label }}<br>
+            {{ form.magnesium }}
+            <br>
+            {{ form.total_phenols.label }}<br>
+            {{ form.total_phenols }}
+            <br>
+            {{ form.flavanoids.label }}<br>
+            {{ form.flavanoids }}
+            <br>
+            {{ form.nonflavanoid_phenols.label }}<br>
+            {{ form.nonflavanoid_phenols }}
+            <br>
+            {{ form.proanthocyanins.label }}<br>
+            {{ form.proanthocyanins }}
+            <br>
+            {{ form.color_intensity.label }}<br>
+            {{ form.color_intensity }}
+            <br>
+            {{ form.hue.label }}<br>
+            {{ form.hue }}
+            <br>
+            {{ form.od280od315_of_diluted_wines.label }}<br>
+            {{ form.od280od315_of_diluted_wines }}
+            <br>
+            {{ form.proline.label }}<br>
+            {{ form.proline }}
+            <br>
+            {{ form.submit }}
+         </form>
+      </div>
+   </body>
+</html>
